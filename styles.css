@@ -1,0 +1,158 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 2em;
+  background-color: #333;
+  color: white;
+}
+
+header .logo img {
+  height: 40px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2em;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5em;
+  text-transform: uppercase;
+}
+
+header .dropdown {
+  position: relative;
+}
+
+header .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+header .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #444;
+  min-width: 160px;
+  z-index: 1;
+}
+
+header .dropdown-content a {
+  padding: 12px 16px;
+  display: block;
+  color: white;
+}
+
+/* Hero Section */
+.hero {
+  background: url('hero-bg.jpg') no-repeat center center/cover;
+  text-align: center;
+  padding: 10em 2em;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 3em;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin: 1em 0;
+}
+
+.hero .cta-button {
+  background-color: #ff5722;
+  color: white;
+  padding: 0.8em 2em;
+  text-decoration: none;
+  font-size: 1.1em;
+  border-radius: 5px;
+}
+
+.hero .cta-button:hover {
+  background-color: #e64a19;
+}
+
+/* Features Section */
+.features {
+  padding: 3em 2em;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 2.5em;
+}
+
+.feature {
+  margin: 2em 0;
+}
+
+.feature h3 {
+  font-size: 1.8em;
+  margin-bottom: 0.5em;
+}
+
+.feature p {
+  font-size: 1.2em;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero {
+    padding: 5em 2em;
+  }
+
+  .hero h1 {
+    font-size: 2.5em;
+  }
+
+  .hero p {
+    font-size: 1.1em;
+  }
+
+  .features {
+    padding: 2em 1em;
+  }
+
+  .feature h3 {
+    font-size: 1.6em;
+  }
+
+  .feature p {
+    font-size: 1.1em;
+  }
+}
